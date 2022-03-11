@@ -5,7 +5,7 @@ export const dataSlice = createSlice({
     initialState: {
         auxNewAuthor: 0,
 
-        currentStep: 0,
+        currentStep: 1,
         refType1: '',
         refType2: '',
 

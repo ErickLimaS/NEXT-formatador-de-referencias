@@ -1,28 +1,42 @@
 import * as C from './styles';
 import Link from 'next/link'
+import Image from 'next/image';
+import NumberOne  from '../../public/img/one.svg';
+import  NumberTwo  from '../../public/img/two.svg';
+import NumberThree from '../../public/img/three.svg';
 
 type Props = {
     title: string,
     description: string,
-    path: string,
     icon: string,
     active: boolean
 }
-export const SideBarItem = ({ title, description, icon, path, active }: Props) => {
+
+
+export const SideBarItem = ({ title, description, icon, active }: Props) => {
+    
 
     // svg = width='50' height='50' on iconarea
     
     return (
         <C.Container>
-            <Link href={path}>
+            <nav>
                 <C.Info>
                     <C.Title active={active}>{title}</C.Title>
                     <C.Description active={active}>{description}</C.Description>
                 </C.Info>
                 <C.IconArea active={active}>
-                    
+                    {icon === 'one' &&
+                        <NumberOne  fill='#56B48C' width='50' height='50' />
+                    }
+                    {icon === 'two' &&
+                        <NumberTwo fill='#56B48C' width='50' height='50' />
+                    }
+                    {icon === 'three' &&
+                        <NumberThree fill='#56B48C' width='50' height='50' />
+                    }
                 </C.IconArea>
-            </Link>
+            </nav>
         </C.Container>
     )
 }  

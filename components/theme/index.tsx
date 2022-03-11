@@ -4,6 +4,7 @@ import { Header } from '../header'
 import { SideBarItem } from '../SideBarItem'
 import { Footer } from '../footer';
 import { useSelector } from 'react-redux'
+import Image from 'next/image';
 
 type Props = {
     children: ReactNode;
@@ -25,7 +26,7 @@ export const Theme = ({ children }: Props) => {
                     <a href='#mainContent' className='buttonAMainText'>Fazer Minha Referência Agora!</a>
                 </div>
                 <div className='divImgLogoxl'>
-                    <img src={logo} alt="Logo do site Referência em ABNT" className='imgLogoxl' width={320} height={320} />
+                    <Image src={logo} alt="Logo do site Referência em ABNT" className='imgLogoxl' width={420} height={420} />
                 </div>
                 <p id="disapearP">Para melhor experiência, recomendamos usar a ferramenta em um Computador ou Notebook.</p>
             </div>
@@ -38,21 +39,18 @@ export const Theme = ({ children }: Props) => {
                             title="Passo 1"
                             description="Escolha de onde vem sua referência"
                             icon="one"
-                            path="/"
                             active={currentStep === 1}
                         />
                         <SideBarItem
                             title="Passo 2"
                             description="Preencha algumas informações."
                             icon="two"
-                            path="/"
                             active={currentStep === 2}
                         />
                         <SideBarItem
                             title="Finalizado!"
                             description="Agora é só copiar e colar."
                             icon="three"
-                            path="/"
                             active={currentStep === 3}
                         />
 

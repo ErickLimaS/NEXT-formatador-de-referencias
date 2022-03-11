@@ -4,7 +4,7 @@ export const Container = styled.div`
     margin: 30px 30px;
     cursos: none;
     
-    a {
+    nav {
         display: flex;
         align-item: center;
         text-decoration: none;

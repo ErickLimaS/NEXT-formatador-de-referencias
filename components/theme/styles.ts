@@ -18,6 +18,10 @@ export const Container = styled.div<{ bgColor: string }>`
         backgroundRepeat: 'no-repeat';
         width: fit-content;
 
+        .divImgLogoxl{
+            display: none;
+        }
+
         .imgLogoxl {
             width: 0px;
             margin: 0 20px;
@@ -97,14 +101,17 @@ export const Container = styled.div<{ bgColor: string }>`
             text-decoration: none;
         }
     }
+
     ${media.greaterThan('sm')`
         #disapearP{
             display: none;
         }
         .divMainText {
             .divImgLogoxl {
-                margin-top: -120px;
+                display: block;
+                margin-top: -520px;
                 margin-bottom: 100px;
+                    
             }
 
             .imgLogoxl{
@@ -168,7 +175,9 @@ export const Container = styled.div<{ bgColor: string }>`
             }
 
             .imgLogoxl {
-                width: 320px;
+                max-width: 420px!important;
+                width: 420px!important;
+                height: 420px!important;
                 z-index: 1;
                 margin-top: 0;
                 filter: blur(0px);
@@ -180,6 +189,8 @@ export const Container = styled.div<{ bgColor: string }>`
 
         color: #FFF;
         min-height: 100vh;
+
+        
 
         .divMainText {
             display: flex;
