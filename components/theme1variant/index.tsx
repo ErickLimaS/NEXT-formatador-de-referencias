@@ -24,21 +24,18 @@ export const Theme = ({ children }: Props) => {
                             title="Passo 1"
                             description="Escolha de onde vem sua referência"
                             icon="one"
-                            path="/"
                             active={currentStep === 1}
                         />
                         <SideBarItem
                             title="Passo 2"
                             description="Preencha algumas informações."
                             icon="two"
-                            path="/"
                             active={currentStep === 2}
                         />
                         <SideBarItem
                             title="Finalizado!"
                             description="Agora é só copiar e colar."
                             icon="three"
-                            path="/"
                             active={currentStep === 3}
                         />
 

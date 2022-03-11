@@ -1,9 +1,10 @@
+import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
 import * as C from './styles'
 
-
-export const TermsConditions = () => {
+    
+const terms: NextPage = () => {
     const [title, setTitle] = useState("Termos e Condições | Referência em ABNT");
 
     useEffect(() => {
@@ -101,3 +102,4 @@ export const TermsConditions = () => {
         </Theme>
     )
 }
+export default terms

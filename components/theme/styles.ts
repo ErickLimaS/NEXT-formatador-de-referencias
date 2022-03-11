@@ -168,6 +168,7 @@ export const Container = styled.div<{ bgColor: string }>`
                 background-color: unset;
                 z-index: 0;
                 border-radius: 0px;
+                max-width: 60%;
             }
             .divImgLogoxl {
                 margin-top: 0px;
@@ -179,7 +180,6 @@ export const Container = styled.div<{ bgColor: string }>`
                 width: 420px!important;
                 height: 420px!important;
                 z-index: 1;
-                margin-top: 0;
                 filter: blur(0px);
             }
         }

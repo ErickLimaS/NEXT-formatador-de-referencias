@@ -1,6 +1,4 @@
 import * as C from './styles';
-import Link from 'next/link'
-import Image from 'next/image';
 import NumberOne  from '../../public/img/one.svg';
 import  NumberTwo  from '../../public/img/two.svg';
 import NumberThree from '../../public/img/three.svg';

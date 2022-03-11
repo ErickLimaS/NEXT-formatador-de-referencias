@@ -1,8 +1,9 @@
-import * as C from '../pages/Step3/styles'
+import * as C from '../pages/step3/styles'
 import { useSelector } from 'react-redux';
+import Link from 'next/link';
 
 export const FormatedText = () => {
-    const { 
+    const {
         auxNewAuthor,
         refType2,
         nameAuthor1,
@@ -53,7 +54,7 @@ export const FormatedText = () => {
         publishingComp,
         noDate,
         edition,
-        radioCheck} = useSelector((state: any) => state.allData)
+        radioCheck } = useSelector((state: any) => state.allData)
 
     let upperSurName1 = surAuthor1.toUpperCase();
     let upperSurName2 = surAuthor2.toUpperCase();
@@ -1453,6 +1454,19 @@ export const FormatedText = () => {
                 )
             }
         }
+
+    }
+    else {
+        return (
+            <div className='divWarning'>
+                <h1 className='h1Warning'>Ops!</h1>
+                <h2 className='h2Warning'>Como você veio parar aqui?</h2>
+                <p className='pWarning'> Você precisa informar o tipo de referência primeiro! <b>Aperte o botão abaixo e volte para o começo!</b></p>
+                <Link href='/'>
+                    <button className="backButtonWarning">Voltar ao Início</button>
+                </Link>
+            </div>
+        )
     }
 
     return formated;

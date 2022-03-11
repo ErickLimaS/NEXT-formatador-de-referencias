@@ -1,9 +1,10 @@
+import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
 import * as C from './styles'
 
 
-export const Sobre = () => {
+const about: NextPage = () => {
     const [title, setTitle] = useState("Sobre Nós | Referência em ABNT");
 
     useEffect(() => {
@@ -36,3 +37,4 @@ export const Sobre = () => {
         </Theme>
     )
 }
+export default about

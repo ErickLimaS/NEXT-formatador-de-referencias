@@ -67,6 +67,10 @@ export const Container = styled.div`
         margin-bottom: 25px;
     }
 
+    div.buttons span{
+        cursor: pointer;
+    }
+
     div.buttons > * {
         border-radius: 30px;
         border: 1px solid #878787;

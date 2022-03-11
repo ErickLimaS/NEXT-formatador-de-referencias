@@ -140,57 +140,57 @@ export const RefInputs = () => {
         const handleTitle = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch(
                 setTitle(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
         const handleSubtitle = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch(
                 setSubtitle(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
         const handleUrl = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch(
                 setUrl(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
 
         const handleDayVisualization = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch(
                 setDayAcess(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
         const handleMonthVisualization = (e: ChangeEvent<HTMLSelectElement>) => {
             dispatch(
                 setMonthAcess(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
         const handleYearVisualization = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch(
                 setYearAcess(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
         const handleDayPubli = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch(
                 setDayPublic(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
         const handleMonthPubli = (e: ChangeEvent<HTMLSelectElement>) => {
             dispatch(
                 setMonthPublic(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
         const handleYearPubli = (e: ChangeEvent<HTMLInputElement>) => {
             dispatch(
                 setYearPublic(
-                e.target.value
-            ));
+                    e.target.value
+                ));
         }
 
         const handleAuthorRadioGroup1 = (e: ChangeEvent<HTMLInputElement>) => {
@@ -2783,6 +2783,15 @@ export const RefInputs = () => {
 
             </C.Container >
         );
+    }
+    else {
+        return (
+            <div className='divWarning'>
+                <h1 className='h1Warning'>Ops!</h1>
+                <h2 className='h2Warning'>Parece que não sabemos o tipo de sua referência!</h2>
+                <p className='pWarning'>Volte para a tela inicial e selecione o tipo.</p>
+            </div>
+        )
     }
 
     return inputHtml;

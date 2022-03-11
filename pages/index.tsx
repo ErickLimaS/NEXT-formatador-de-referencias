@@ -1,6 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ChangeEvent, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -11,42 +9,42 @@ import { SelectOptions } from '../redux/selectOptionStep1'
 import styled from "styled-components";
 
 const Home: NextPage = () => {
-  const dispatch = useDispatch();
-  const { refType1, refType2 } = useSelector((state: any) => state.allData);
-  const [title, setTitle] = useState("Referência em ABNT | Faça Agora!");
+    const dispatch = useDispatch();
+    const { refType1, refType2 } = useSelector((state: any) => state.allData);
+    const [title, setTitle] = useState("Referência em ABNT | Faça Agora!");
 
-  useEffect(() => {
-      document.title = title;
-      window.scrollTo(0, 0);
-      setTitle('Referência em ABNT | Faça Agora!')
-      dispatch(
-          setCurrentStep(1))
-  }, [title])
+    useEffect(() => {
+        document.title = title;
+        window.scrollTo(0, 0);
+        setTitle('Referência em ABNT | Faça Agora!')
+        dispatch(
+            setCurrentStep(1))
+    }, [title])
 
-  const handleNextStep = () => {
-      if (refType2 === '') {
-          if (refType1 === '11') {
-              <Link href={'./step2'} />
-          }
-          swal("Tipo não Selecionado!", "Você precisa dizer de onde a referência vem!", "warning");
-      }
-      else if (refType1 !== '' || refType2 !== '') {
-          <Link href={'./step2'} />
-      }
-      else {
-          swal("Tipo não Selecionado!", "Você precisa dizer de onde a referência vem!", "warning");
-      }
-  };
+    const handleNextStep = () => {
+        if (refType2 === '') {
+            if (refType1 === '11') {
+                //<Link href={'./Step2'} />
+            }
+            swal("Tipo não Selecionado!", "Você precisa dizer de onde a referência vem!", "warning");
+        }
+        else if (refType1 !== '' || refType2 !== '') {
+            //<Link href='./Step2' />
+        }
+        else {
+            swal("Tipo não Selecionado!", "Você precisa dizer de onde a referência vem!", "warning");
+        }
+    };
 
-  const handleOptionChange = (e: ChangeEvent<HTMLSelectElement>) => {
-      dispatch(
-          setRefType1(
-              e.target.value
-          ));
-  }
+    const handleOptionChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        dispatch(
+            setRefType1(
+                e.target.value
+            ));
+    }
 
 
-const Container = styled.div`
+    const Container = styled.div`
     
     }
 
@@ -103,43 +101,46 @@ const Container = styled.div`
 
 `;
 
-  return (
-      <Theme>
-          <Container>
+    return (
+        <Theme>
+            <Container>
 
-              <h1>Primeiro, Escolha de Onde Vem a Sua Referência</h1>
-              <p>Escolha uma das opções da lista abaixo</p>
+                <h1>Primeiro, Escolha de Onde Vem a Sua Referência</h1>
+                <p>Escolha uma das opções da lista abaixo</p>
 
-              <hr />
+                <hr />
 
-              <div className='selectStep1'>
-                  <label>
-                      De onde vem sua Referência?
-                      <select
-                          autoFocus
-                          onChange={handleOptionChange}
-                          value={refType1}
-                      >
-                          <option value='' disabled>Essa referência vem de(a) ...</option>
-                          <option value='10'>Internet - Ex: Wikipédia, Sites, Podcasts, Blogs, Redes Sociais, Email</option>
-                          <option value='20'>Livro ou E-Book</option>
-                          <option value='30'>Mídia - Ex: Vídeo</option>
-                          <option value='40'>Jornal ou Revista - Ex: Reportagem, Entrevistas, Artigos</option>
-                          <option value='50'>Trabalhos Acadêmicos / TCC</option>
-                      </select>
-                  </label>
+                <div className='selectStep1'>
+                    <label>
+                        De onde vem sua Referência?
+                        <select
+                            autoFocus
+                            onChange={handleOptionChange}
+                            value={refType1}
+                        >
+                            <option value='' disabled>Essa referência vem de(a) ...</option>
+                            <option value='10'>Internet - Ex: Wikipédia, Sites, Podcasts, Blogs, Redes Sociais, Email</option>
+                            <option value='20'>Livro ou E-Book</option>
+                            <option value='30'>Mídia - Ex: Vídeo</option>
+                            <option value='40'>Jornal ou Revista - Ex: Reportagem, Entrevistas, Artigos</option>
+                            <option value='50'>Trabalhos Acadêmicos / TCC</option>
+                        </select>
+                    </label>
 
-              </div>
+                </div>
 
-              <SelectOptions />
+                <SelectOptions />
 
-              <div className='buttons'>
-                  <button onClick={handleNextStep}>Próximo</button>
-              </div>
-          </Container>
+                <div className='buttons'>
 
-      </Theme>
-  )
+                    <Link href='./step2'>
+                        <button onClick={handleNextStep}>Próximo</button>
+                    </Link>
+                </div>
+            </Container>
+
+        </Theme>
+    )
 }
 
 export default Home

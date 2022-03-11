@@ -14,6 +14,7 @@ export const Container = styled.div`
 
     .buttonMobile {
         background-color: inherit;
+        padding: 0 5px;
     }
 
     .mantine-Drawer-header {

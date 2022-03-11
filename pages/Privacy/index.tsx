@@ -1,9 +1,10 @@
+import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
 import * as C from './styles'
 
-
-export const Privacidade = () => {
+    
+const privacy: NextPage = () => {
     const [title, setTitle] = useState("Política de Privacidade | Referência em ABNT");
 
     useEffect(() => {
@@ -181,3 +182,4 @@ export const Privacidade = () => {
         </Theme>
     )
 }
+export default privacy

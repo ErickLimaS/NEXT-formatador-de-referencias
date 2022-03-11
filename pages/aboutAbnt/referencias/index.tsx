@@ -1,15 +1,11 @@
 import * as C from './styled'
 import { Theme } from '../../../components/theme2'
 import { useEffect, useState } from 'react';
+import { NextPage } from 'next';
+import Image from 'next/image';
 
-export const Referencias = () => {
+const referencias: NextPage = () => {
     const [title, setTitle] = useState("Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT");
-
-
-    const img1 = require('../../../img/referenciasPage/1-1.JPG');
-    const img2 = require('../../../img/referenciasPage/2-1.JPG');
-    const img3 = require('../../../img/referenciasPage/3-1.JPG');
-    const img4 = require('../../../img/referenciasPage/4-1.JPG');
 
     useEffect(() => {
         document.title = title;
@@ -40,7 +36,7 @@ export const Referencias = () => {
                     Ao acessar o <a href='https://www.referenciaemabnt.com'>site</a>, você irá se deparar com a imagem abaixo:
                 </p>
                 <div className='imgCenter'>
-                    <img src={img1} alt="Passo 1. Tela inicial para formatar a referência." /></div>
+                    <Image src='/../public/img/referenciasPage/1-1.JPG' alt="Passo 1. Tela inicial para formatar a referência." width={600} height={300}/></div>
                 <p>
                     No primeiro campo, preencha com a informação que mais se encaixa com a referência que você usou. No nosso caso, usaremos uma referência da <span className='underline'>Wikipédia</span>, que fala sobre o <span className='underline'>Planeta Terra</span>. Então selecionaremos a opção "Internet" no primeiro campo. Depois de selecionada, aparecerá outra caixa de seleção, agora para especificar de onde da <span className='underline'>Internet</span> que tiramos a referência.
                 </p>
@@ -48,7 +44,7 @@ export const Referencias = () => {
                     Após preenchidas, a sua tela deverá estar assim:
                 </p>
                 <div className='imgCenter'>
-                    <img src={img2} alt="A tela agora deve estar com todas as informações necessárias." />
+                <Image src='/../public/img/referenciasPage/2-1.JPG' alt="A tela agora deve estar com todas as informações necessárias." width={600} height={300}/>
                 </div>
                 <p>
                     Sendo assim, aperte em "Próximo" e iremos para o próximo passo.
@@ -58,7 +54,7 @@ export const Referencias = () => {
                     Seguindo para o próximo passo, iremos ver a seguinte tela:
                 </p>
                 <div className='imgCenter'>
-                    <img src={img3} alt="Agora precisamos preencher todos as informações pedidas sobre a referência." />
+                <Image src='/../public/img/referenciasPage/3-1.JPG' alt="Agora precisamos preencher todos as informações pedidas sobre a referência." width={600} height={300}/>
                 </div>
                 <p>
                     Os campos a ser preenchidos tem um título bem sugestivo e direto. Então, apenas você irá apenas preencher o que é pedido em cada campo.
@@ -83,7 +79,7 @@ export const Referencias = () => {
                     Está pronta! A referência está agora formatada para os padrões exigidos pela ABNT.
                 </p>
                 <div className='imgCenter'>
-                    <img src={img4} alt="A referência foi formatada para as normas ABNT. Agora é copiar ela e colar no trabalho." />
+                <Image src='/../public/img/referenciasPage/4-1.JPG' alt="A referência foi formatada para as normas ABNT. Agora é copiar ela e colar no trabalho." width={600} height={300}/>
                 </div>
                 <p>
                     Agora iremos apenas copiar essa referência já formatada e colar ela na seção de "<span className='underline'>Referências Bibliográficas</span>" do nosso trabalho.
@@ -95,3 +91,4 @@ export const Referencias = () => {
         </Theme>
     )
 };
+export default referencias

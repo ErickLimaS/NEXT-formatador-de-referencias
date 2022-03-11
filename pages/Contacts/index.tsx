@@ -1,9 +1,10 @@
+import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
 import * as C from './styles'
 
 
-export const Contatos = () => {
+const contacts: NextPage = () => {
     const [title, setTitle] = useState("Contatos | Referência em ABNT");
 
     useEffect(() => {
@@ -27,3 +28,4 @@ export const Contatos = () => {
         </Theme>
     )
 }
+export default contacts

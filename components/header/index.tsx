@@ -2,6 +2,7 @@ import * as C from './styles';
 import { Button, Drawer, Group, Menu } from '@mantine/core';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import MenuSvg from '../../public/img/menu-svg.svg'
 import {
     setCurrentStep,
     setRefType1,
@@ -264,20 +265,20 @@ export const Header = () => {
             >
                 <span className='spanMobileMenu' id='drawer-titulo'>Como Fazer...</span>
                 <ul id='drawer-body'>
-                    <li><a href='/abnt/como-fazer-referencias-bibliograficas-em-abnt' target="_blank">... as Referências Bibliográficas</a></li>
+                    <li><a href='./aboutAbnt/referencias' target="_blank">... as Referências Bibliográficas</a></li>
 
                 </ul>
             </Drawer>
 
             <Group position="center">
                 <Button className='buttonMobile' onClick={() => setOpened(true)}>
-                    000
+                    <MenuSvg fill='#FFF' width={25} height={25} />
                 </Button>
             </Group>
 
             <Menu className='menuDesktop' control={<Button>Como Fazer em ABNT ...</Button>} placement="center" gutter={8} withArrow size="lg">
                 <Menu.Label>Como Fazer...</Menu.Label>
-                <Menu.Item component='a' href='/abnt/como-fazer-referencias-bibliograficas-em-abnt' target="_blank">... as Referências Bibliográficas</Menu.Item>
+                <Menu.Item component='a' href='./aboutAbnt/referencias' target="_blank">... as Referências Bibliográficas</Menu.Item>
 
             </Menu>
 

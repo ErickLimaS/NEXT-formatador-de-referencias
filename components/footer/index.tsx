@@ -8,7 +8,7 @@ export const Footer = () => {
                     <a href={'/about'}>Sobre</a>
                 </li>
                 <li>
-                    <a href={'/terms-and-conditions'}>Termos e Condições</a>
+                    <a href={'/terms'}>Termos e Condições</a>
                 </li>
                 <li>
                     <a href={'/privacy'}>Política de Privacidade</a>
