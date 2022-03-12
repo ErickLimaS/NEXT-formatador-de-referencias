@@ -7,7 +7,8 @@ import Link from 'next/link';
 import { NextPage } from 'next';
 import styled from "styled-components";
 import { media } from "../../components/theme/media";
-import { setCurrentStep,
+import {
+    setCurrentStep,
     setRefType1,
     setRefType2,
     setNameAuthor1,
@@ -59,11 +60,12 @@ import { setCurrentStep,
     setNameGuest,
     setMagazine,
     setNumberMagaz,
-    setAuxNewAuthor } from '../../redux/FormContext';
+    setAuxNewAuthor
+} from '../../redux/FormContext';
 
 const step3: NextPage = () => {
     const dispatch = useDispatch();
-    const { refType1 } = useSelector((state: any) => state.allData)
+    const { refType1, refType2 } = useSelector((state: any) => state.allData)
     const [title, setTitle] = useState("Concluído! | Referência em ABNT");
 
     useEffect(() => {
@@ -463,9 +465,9 @@ const step3: NextPage = () => {
                     Sempre verifique se não há espaços em branco ou não preenchidos em sua referência. Se houver, por favor, refaça a referência do começo.
                 </Alert>
                 <div className='buttons'>
-                    <Link href='/'>
-                        <button onClick={refreshToStep1} className="backButton">Fazer Nova Referência</button>
-                    </Link>
+                    <a href="/">
+                        <button className="backButton">Fazer Nova Referência</button>
+                    </a>
                 </div>
 
                 <hr />

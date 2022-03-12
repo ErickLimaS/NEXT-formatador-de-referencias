@@ -65,7 +65,6 @@ export const Header = () => {
     const [opened, setOpened] = useState(false);
     const dispatch = useDispatch();
 
-    //svg menu
     const refreshToStep1 = () => {
         dispatch(
             setCurrentStep

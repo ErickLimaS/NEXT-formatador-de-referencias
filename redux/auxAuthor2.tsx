@@ -109,12 +109,12 @@ export const Teste = () => {
                 <hr />
 
                 <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: João." type='text'
-                    onBlur={handleNameAuthor1} placeholder={nameAuthor1}
+                    onBlur={handleNameAuthor2} placeholder={nameAuthor2}
                     rightSection={AuthorFirstInfoCircle} />
 
                 <hr />
 
-                <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor1} placeholder={surAuthor1} rightSection={AuthorSurInfoCircle} />
+                <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor2} placeholder={surAuthor2} rightSection={AuthorSurInfoCircle} />
             </div>
         )
     }

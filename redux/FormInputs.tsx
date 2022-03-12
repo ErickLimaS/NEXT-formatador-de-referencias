@@ -441,7 +441,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local da Publicação da Matéria" description="Qual a cidade e o estado de onde essa matéria foi publicada? Se não souber, deixe em branco. Ex: Brasília - DF." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Local da Publicação da Matéria" description="Qual a cidade e o estado de onde essa matéria foi publicada? Ex: Brasília - DF. Se não souber, não precisa preencher nada.  ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
@@ -806,7 +806,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local da Publicação" description="Qual a cidade e o estado de onde esse post foi feito? Se não souber, deixe em branco. Ex: Brasília - DF." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Local da Publicação" description="Qual a cidade e o estado de onde esse post foi feito? Ex: Brasília - DF. Se não souber, não precisa preencher nada.  ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
@@ -951,7 +951,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local do Envio do Email" description="Escreva a cidade de onde o email foi enviado. Caso não souber, deixe o espaço em branco. Ex: São Paulo." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Local do Envio do Email" description="Escreva a cidade de onde o email foi enviado. Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
@@ -1176,7 +1176,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local da Publicação do Livro" description="Caso não souber, deixe o espaço em branco. Ex: São Paulo." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Local da Publicação do Livro" description="Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
@@ -1302,7 +1302,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local da Publicação do Livro" description="Caso não souber, deixe o espaço em branco. Ex: São Paulo." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Local da Publicação do Livro" description="Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
@@ -1430,7 +1430,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local de onde o Vídeo foi Feito" description="Caso não souber, deixe em branco. Ex: Campinas - SP" type='text' placeholder={local} rightSection={LocalInfoCircle}
+                <TextInput label="Local de onde o Vídeo foi Feito" description="Ex: Campinas - SP. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle}
                     onBlur={handleLocal} />
 
                 <hr />
@@ -1934,7 +1934,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Cidade onde a Entrevista foi feita" description="Escreva a cidade onde a entrevista foi publicada. Caso não souber, deixe o espaço em branco. Ex: São Paulo." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} required />
+                <TextInput label="Cidade onde a Entrevista foi feita" description="Escreva a cidade onde a entrevista foi publicada. Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} required />
 
                 <hr />
 
@@ -2088,7 +2088,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Lugar onde a Entrevista foi publicada" description="Escreva a cidade onde a entrevista foi publicada. Caso não souber, deixe o espaço em branco. Ex: São Paulo." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Lugar onde a Entrevista foi publicada" description="Escreva a cidade onde a entrevista foi publicada. Ex: São Paulo.Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
@@ -2228,7 +2228,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Lugar de onde o artigo foi publicada" description="Escreva a cidade onde a entrevista foi publicada. Caso não souber, deixe o espaço em branco. Ex: São Paulo." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Lugar de onde o artigo foi publicada" description="Escreva a cidade onde a entrevista foi publicada. Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
@@ -2380,7 +2380,7 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Lugar de onde o artigo foi publicada" description="Escreva a cidade onde a entrevista foi publicada. Caso não souber, deixe o espaço em branco. Ex: São Paulo." type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Lugar de onde o artigo foi publicada" description="Escreva a cidade onde a entrevista foi publicada. Ex: São Paulo.Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 

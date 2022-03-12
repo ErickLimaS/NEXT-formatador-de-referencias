@@ -367,7 +367,7 @@ export const FormatedText = () => {
     }
 
     //REF 14 - REDES S ** got inputs from radiocheck 2 to radiocheck1
-    if (refType2 === '14') {
+    else if (refType2 === '14') {
 
         if (radioCheck === '1') {
             formated = (
@@ -388,7 +388,7 @@ export const FormatedText = () => {
     }
 
     //REF 15 - email
-    if (refType2 === '15') {
+    else if (refType2 === '15') {
 
         if (radioCheck === '1') {
             formated = (
@@ -409,7 +409,7 @@ export const FormatedText = () => {
     }
 
     //REF 16 - wikipedia
-    if (refType2 === '16') {
+    else if (refType2 === '16') {
 
         if (radioCheck === '1') {
             formated = (
@@ -430,7 +430,7 @@ export const FormatedText = () => {
     }
 
     //REF 21 - livro
-    if (refType2 === '21') {
+    else if (refType2 === '21') {
 
         if (radioCheck === '1') {
             if (etAlCheckbox !== '') {
@@ -549,7 +549,7 @@ export const FormatedText = () => {
     }
 
     //REF 22 - ebook
-    if (refType2 === '22') {
+    else if (refType2 === '22') {
 
         if (radioCheck === '1') {
             if (etAlCheckbox !== '' && doiCheckbox === '0' && subtitle === '') {
@@ -994,7 +994,7 @@ export const FormatedText = () => {
     }
 
     //REF 31 - video
-    if (refType2 === '31') {
+    else if (refType2 === '31') {
 
         if (radioCheck === '1') {
             formated = (
@@ -1015,7 +1015,7 @@ export const FormatedText = () => {
     }
 
     //REF 41 - reportagem
-    if (refType2 === '41') {
+    else if (refType2 === '41') {
 
         if (radioCheck === '1') {
             formated = (
@@ -1036,7 +1036,7 @@ export const FormatedText = () => {
     }
 
     //REF 42 - entrevista revista
-    if (refType2 === '42') {
+    else if (refType2 === '42') {
 
         if (radioCheck === '1') {
             formated = (
@@ -1057,7 +1057,7 @@ export const FormatedText = () => {
     }
 
     //REF 43 - artigo revista
-    if (refType2 === '43') {
+    else if (refType2 === '43') {
 
         if (radioCheck === '1') {
             formated = (
@@ -1078,7 +1078,7 @@ export const FormatedText = () => {
     }
 
     //REF 44 - artigo internet
-    if (refType2 === '44') {
+    else if (refType2 === '44') {
 
         if (radioCheck === '1') {
             formated = (
@@ -1099,7 +1099,7 @@ export const FormatedText = () => {
     }
 
     //REF 51 - Tese
-    if (refType2 === '51') {
+    else if (refType2 === '51') {
 
         if (radioCheck === '1') {
             if (auxNewAuthor === 0 && etAlCheckbox !== '') {
@@ -1218,7 +1218,7 @@ export const FormatedText = () => {
     }
 
     //REF 52 - Dissertacao
-    if (refType2 === '52') {
+    else if (refType2 === '52') {
 
         if (radioCheck === '1') {
             if (auxNewAuthor === 0 && etAlCheckbox !== '') {
@@ -1338,7 +1338,7 @@ export const FormatedText = () => {
     }
 
     //REF 53 - Tese na internet
-    if (refType2 === '53') {
+    else if (refType2 === '53') {
 
         if (radioCheck === '1') {
             if (auxNewAuthor === 0 && etAlCheckbox !== '') {
@@ -1456,12 +1456,13 @@ export const FormatedText = () => {
         }
 
     }
+    
     else {
         return (
             <div className='divWarning'>
                 <h1 className='h1Warning'>Ops!</h1>
                 <h2 className='h2Warning'>Como você veio parar aqui?</h2>
-                <p className='pWarning'> Você precisa informar o tipo de referência primeiro! <b>Aperte o botão abaixo e volte para o começo!</b></p>
+                <p className='pWarning'> Você precisa informar o tipo de referência primeiro! <b className='bWarning'>Aperte o botão abaixo e volte para o começo!</b></p>
                 <Link href='/'>
                     <button className="backButtonWarning">Voltar ao Início</button>
                 </Link>

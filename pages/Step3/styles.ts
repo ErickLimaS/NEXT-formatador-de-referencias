@@ -117,6 +117,10 @@ export const Container = styled.div`
         font-size: 16px;
         font-weight: 500;
     }
+    .bWarning {
+        justify-content: center;
+        display: flex;
+    }
     p{
         color: #3f4554;
         font-size: 20px;
