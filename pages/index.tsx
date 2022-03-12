@@ -3,14 +3,14 @@ import Link from 'next/link'
 import { ChangeEvent, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Theme } from '../components/theme'
-import { setCurrentStep, setRefType1, setRefType2 } from '../redux/FormContext'
+import { setCurrentStep, setNameAuthor1, setRefType1, setRefType2 } from '../redux/FormContext'
 import swal from 'sweetalert';
 import { SelectOptions } from '../redux/selectOptionStep1'
 import styled from "styled-components";
 
 const Home: NextPage = () => {
     const dispatch = useDispatch();
-    const { refType1, refType2 } = useSelector((state: any) => state.allData);
+    const { refType1, refType2 , nameAuthor1} = useSelector((state: any) => state.allData);
     const [title, setTitle] = useState("Referência em ABNT | Faça Agora!");
 
     useEffect(() => {
@@ -23,9 +23,6 @@ const Home: NextPage = () => {
 
     const handleNextStep = () => {
         if (refType2 === '') {
-            if (refType1 === '11') {
-                //<Link href={'./Step2'} />
-            }
             swal("Tipo não Selecionado!", "Você precisa dizer de onde a referência vem!", "warning");
         }
         else if (refType1 !== '' || refType2 !== '') {
@@ -39,6 +36,13 @@ const Home: NextPage = () => {
     const handleOptionChange = (e: ChangeEvent<HTMLSelectElement>) => {
         dispatch(
             setRefType1(
+                e.target.value
+            ));
+    }
+
+    const handleAuthorName1 = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(
+            setNameAuthor1(
                 e.target.value
             ));
     }
@@ -107,7 +111,7 @@ const Home: NextPage = () => {
 
                 <h1>Primeiro, Escolha de Onde Vem a Sua Referência</h1>
                 <p>Escolha uma das opções da lista abaixo</p>
-
+                
                 <hr />
 
                 <div className='selectStep1'>
@@ -132,7 +136,7 @@ const Home: NextPage = () => {
                 <SelectOptions />
 
                 <div className='buttons'>
-
+{refType1}{refType2}
                     <Link href='./step2'>
                         <button onClick={handleNextStep}>Próximo</button>
                     </Link>

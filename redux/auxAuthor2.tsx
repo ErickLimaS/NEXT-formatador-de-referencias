@@ -6,7 +6,7 @@ import { setNameAuthor6, setNameAuthor5, setNameAuthor4, setNameAuthor3, setName
 
 export const Teste = () => {
     const dispatch = useDispatch();
-    const { auxNewAuthor } = useSelector((state: any) => state.allData)
+    const { radioCheck, auxNewAuthor, etAlCheckbox, nameAuthor1, nameAuthor2, nameAuthor3, nameAuthor4, nameAuthor5, nameAuthor6, surAuthor1, surAuthor2, surAuthor3, surAuthor4, surAuthor5, surAuthor6, companyName  } = useSelector((state: any) => state.allData)
 
     //infoicon
     const AuthorFirstInfoCircle = (
@@ -108,13 +108,13 @@ export const Teste = () => {
             <div>
                 <hr />
 
-                <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                    onChange={handleNameAuthor1} placeholder='Ex: João'
+                <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: João." type='text'
+                    onBlur={handleNameAuthor1} placeholder={nameAuthor1}
                     rightSection={AuthorFirstInfoCircle} />
 
                 <hr />
 
-                <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor1} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor1} placeholder={surAuthor1} rightSection={AuthorSurInfoCircle} />
             </div>
         )
     }
@@ -123,24 +123,24 @@ export const Teste = () => {
             <div>
                 <div>
                     <hr />
-                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor2} placeholder='Ex: João'
+                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: João." type='text'
+                        onBlur={handleNameAuthor2} placeholder={nameAuthor2}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor2} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor2} placeholder={surAuthor2} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="3° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor3} placeholder='Ex: Clara'
+                    <TextInput required label="3° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Clara." type='text'
+                        onBlur={handleNameAuthor3} placeholder={nameAuthor3}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 3° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor3} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 3° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor3} placeholder={surAuthor3} rightSection={AuthorSurInfoCircle} />
                 </div>
             </div>
         )
@@ -149,35 +149,35 @@ export const Teste = () => {
         newAuthor = (
             <div>
                 <div>
-                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor2} placeholder='Ex: João'
+                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: João." type='text'
+                        onBlur={handleNameAuthor2} placeholder={nameAuthor2}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor2} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor2} placeholder={surAuthor2} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor3} placeholder='Ex: João'
+                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: Clara." type='text'
+                        onBlur={handleNameAuthor3} placeholder={nameAuthor3}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor3} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor3} placeholder={surAuthor3} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor4} placeholder='Ex: Clara'
+                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Maria." type='text'
+                        onBlur={handleNameAuthor4} placeholder={nameAuthor4}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor4} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor4} placeholder={surAuthor4} rightSection={AuthorSurInfoCircle} />
                 </div>
             </div>
         )
@@ -187,35 +187,35 @@ export const Teste = () => {
             <div>
                 <div>
                     <hr />
-                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor2} placeholder='Ex: João'
+                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção Ex: João." type='text'
+                        onBlur={handleNameAuthor2} placeholder={nameAuthor2}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor2} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor2} placeholder={surAuthor2} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor3} placeholder='Ex: João'
+                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: Clara." type='text'
+                        onBlur={handleNameAuthor3} placeholder={nameAuthor3}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor3} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor3} placeholder={surAuthor3} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor4} placeholder='Ex: Clara'
+                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Maria." type='text'
+                        onBlur={handleNameAuthor4} placeholder={nameAuthor4}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor4} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor4} placeholder={surAuthor4}  rightSection={AuthorSurInfoCircle} />
                 </div>
             </div>
         )
@@ -225,44 +225,44 @@ export const Teste = () => {
             <div>
                 <div>
                     <hr />
-                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor2} placeholder='Ex: João'
+                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção Ex: João." type='text'
+                        onBlur={handleNameAuthor2} placeholder={nameAuthor2}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor2} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor2} placeholder={surAuthor2} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor3} placeholder='Ex: João'
+                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: Clara." type='text'
+                        onBlur={handleNameAuthor3} placeholder={nameAuthor3}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor3} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor3} placeholder={surAuthor3} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor4} placeholder='Ex: Clara'
+                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Maria." type='text'
+                        onBlur={handleNameAuthor4} placeholder={nameAuthor4}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor4} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor4} placeholder={surAuthor4}  rightSection={AuthorSurInfoCircle} />
                 </div>
                 <div>
-                    <TextInput required label="5° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor5} placeholder='Ex: Clara'
+                    <TextInput required label="5° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Pedro." type='text'
+                        onBlur={handleNameAuthor5} placeholder={nameAuthor5}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 5° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor5} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 5° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor5} placeholder={surAuthor5}  rightSection={AuthorSurInfoCircle} />
                 </div>
             </div>
         )
@@ -272,53 +272,53 @@ export const Teste = () => {
             <div>
                 <div>
                     <hr />
-                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor2} placeholder='Ex: João'
+                    <TextInput required label="2° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção Ex: João." type='text'
+                        onBlur={handleNameAuthor2} placeholder={nameAuthor2}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor2} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 2° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor2} placeholder={surAuthor2} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor3} placeholder='Ex: João'
+                    <TextInput required label="3° Autor(a) / Editor(a)" description="O segundo nome do autor(a) vai nessa seção. Ex: Clara." type='text'
+                        onBlur={handleNameAuthor3} placeholder={nameAuthor3}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção" type='text' onChange={handleSurAuthor3} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 3° Autor(a) / Editor(a)" description="Apenas o sobrenome do autor(a) / editor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor3} placeholder={surAuthor3} rightSection={AuthorSurInfoCircle} />
 
                     <hr />
                 </div>
                 <div>
-                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor4} placeholder='Ex: Clara'
+                    <TextInput required label="4° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Maria." type='text'
+                        onBlur={handleNameAuthor4} placeholder={nameAuthor4}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor4} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 4° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor4} placeholder={surAuthor4}  rightSection={AuthorSurInfoCircle} />
                 </div>
                 <div>
-                    <TextInput required label="5° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor5} placeholder='Ex: Clara'
+                    <TextInput required label="5° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Pedro." type='text'
+                        onBlur={handleNameAuthor5} placeholder={nameAuthor5}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 5° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor5} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 5° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor5} placeholder={surAuthor5}  rightSection={AuthorSurInfoCircle} />
                 </div>
                 <div>
-                    <TextInput required label="6° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                        onChange={handleNameAuthor6} placeholder='Ex: Clara'
+                    <TextInput required label="6° Autor(a) / Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Jonathan." type='text'
+                        onBlur={handleNameAuthor6} placeholder={nameAuthor6}
                         rightSection={AuthorFirstInfoCircle} />
 
                     <hr />
 
-                    <TextInput required label="Sobrenome do 6° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor6} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                    <TextInput required label="Sobrenome do 6° Autor(a) /Editor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor6} placeholder={surAuthor6}  rightSection={AuthorSurInfoCircle} />
                 </div>
             </div>
         )

@@ -8,7 +8,7 @@ import { setAuxNewAuthor, setCompanyName, setEtAlCheckbox, setSurAuthor1, setNam
 
 
 export const AuxAuthor = () => {
-    const { radioCheck, auxNewAuthor, etAlCheckbox } = useSelector((state: any) => state.allData)
+    const { radioCheck, auxNewAuthor, etAlCheckbox, nameAuthor1, nameAuthor2, nameAuthor3, nameAuthor4, nameAuthor5, nameAuthor6, surAuthor1, surAuthor2, surAuthor3, surAuthor4, surAuthor5, surAuthor6, companyName } = useSelector((state: any) => state.allData)
     const dispatch = useDispatch();
 
     const AuthorFirstInfoCircle = (
@@ -65,13 +65,13 @@ export const AuxAuthor = () => {
     if (radioCheck === '1') {
         authorCheck = (
             <C.Container>
-                <TextInput required label="Nome do Autor(a) ou Editor(a)" description="O primeiro nome do autor(a) vai nessa seção" type='text'
-                    onChange={handleNameAuthor1} placeholder='Ex: Clara'
+                <TextInput required label="Nome do Autor(a) ou Editor(a)" description="O primeiro nome do autor(a) vai nessa seção. Ex: Clara." type='text'
+                    onBlur={handleNameAuthor1} placeholder={nameAuthor1}
                     rightSection={AuthorFirstInfoCircle} />
 
                 <hr />
 
-                <TextInput required label="Sobrenome do Autor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção" type='text' onChange={handleSurAuthor1} placeholder='Ex: Paiva' rightSection={AuthorSurInfoCircle} />
+                <TextInput required label="Sobrenome do Autor(a)" description="Apenas o sobrenome do autor(a) vai nessa seção. Ex: Paiva." type='text' onBlur={handleSurAuthor1} placeholder={surAuthor1} rightSection={AuthorSurInfoCircle} />
 
                 <Teste />
 
@@ -97,8 +97,8 @@ export const AuxAuthor = () => {
     else if (radioCheck === '2') {
         authorCheck = (
             <div>
-                <TextInput required label="Nome da Organização que escreveu a Matéria" description="O  nome completo. Começando sempre com suas siglas. Veja exemplo abaixo." type='text'
-                    onChange={handleCompanyName} placeholder='Ex:SABESP - Companhia de Saneamento Básico do Estado de São Paulo' rightSection={AuthorFirstInfoCircle} />
+                <TextInput required label="Nome da Organização que escreveu a Matéria" description="O  nome completo. Começando sempre com suas siglas. Ex:SABESP - Companhia de Saneamento Básico do Estado de São Paulo." type='text'
+                    onBlur={handleCompanyName} placeholder={companyName} rightSection={AuthorFirstInfoCircle} />
             </div>)
         return authorCheck
     }

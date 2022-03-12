@@ -52,6 +52,7 @@ export const SelectOptions = () => {
                     <select
                         autoFocus
                         onChange={handleOptionChange}
+                        value={refType2}
                     >
                         <option value='' disabled selected>Escolha Uma ...</option>
                         <option value='21'>Referência do Livro por Completo</option>
@@ -71,6 +72,7 @@ export const SelectOptions = () => {
                     <select
                         autoFocus
                         onChange={handleOptionChange}
+                        value={refType2}
                     >
                         <option value='' disabled selected>Escolha Uma ...</option>
                         <option value='31'>Vídeo</option>
@@ -89,6 +91,7 @@ export const SelectOptions = () => {
                     <select
                         autoFocus
                         onChange={handleOptionChange}
+                        value={refType2}
                     >
                         <option value='' disabled selected>Escolha Uma ...</option>
                         <option value='41'>Reportagem</option>
@@ -110,6 +113,7 @@ export const SelectOptions = () => {
                     <select
                         autoFocus
                         onChange={handleOptionChange}
+                        value={refType2}
                     >
                         <option value='' disabled selected>Escolha Uma ...</option>
                         <option value='51'>Tese</option>
