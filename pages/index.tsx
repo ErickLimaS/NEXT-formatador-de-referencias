@@ -7,19 +7,18 @@ import { setCurrentStep, setNameAuthor1, setRefType1, setRefType2 } from '../red
 import swal from 'sweetalert';
 import { SelectOptions } from '../redux/selectOptionStep1'
 import styled from "styled-components";
+import Head from 'next/head'
+import Script from 'next/script'
 
 const Home: NextPage = () => {
     const dispatch = useDispatch();
-    const { refType1, refType2 , nameAuthor1} = useSelector((state: any) => state.allData);
-    const [title, setTitle] = useState("Referência em ABNT | Faça Agora!");
+    const { refType1, refType2, nameAuthor1 } = useSelector((state: any) => state.allData);
 
     useEffect(() => {
-        document.title = title;
         window.scrollTo(0, 0);
-        setTitle('Referência em ABNT | Faça Agora!')
         dispatch(
             setCurrentStep(1))
-    }, [title])
+    }, [])
 
     const handleNextStep = () => {
         if (refType2 === '') {
@@ -108,10 +107,37 @@ const Home: NextPage = () => {
     return (
         <Theme>
             <Container>
+                <Head>
+                    <title>Gerador de Referência em ABNT | Referência em ABNT</title>
+                    <meta charSet="utf-8" />
+                    <meta name="title" content="Referência em ABNT 2022 - Faça Agora a Sua!" />
+                    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                    <meta name="description"
+                        content="Formate suas referências bibliográficas usando nosso gerador com as normas ABNT mais atualizadas. Apenas copie e cole no seu trabalho a referência pronta!" />
+                    <meta name="keywords"
+                        content="normas abnt, referencia, gerador referencia, gerador abnt, margem abnt, como fazer referencia em abnt, formatar trabalho em abnt, referencias prontas para trabalho escolar, projeto em abnt, TCC em abnt, referencias bibliograficas, referencias bibliograficas em abnt, como fazer referencias"
+                    />
+                    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                    <link rel="manifest" href="%PUBLIC_URL%/site.manifest.json" />
+                    <link rel="canonical" href="https://referenciaemabnt.com" />
+                    <meta name="copyright" content="(c) 2022" />
+                    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta name="theme-color" content="#000000" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                    <link rel="manifest" href="/site.webmanifest" />
+                    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+                    <meta name="msapplication-TileColor" content="#da532c" />
+                    <meta name="theme-color" content="#af0000" />
+                    <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-222262080-1">
+                    </Script>
+                </Head>
 
                 <h1>Primeiro, Escolha de Onde Vem a Sua Referência</h1>
                 <p>Escolha uma das opções da lista abaixo</p>
-                
+
                 <hr />
 
                 <div className='selectStep1'>
