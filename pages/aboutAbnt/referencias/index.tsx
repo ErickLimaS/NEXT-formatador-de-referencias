@@ -1,4 +1,3 @@
-import * as C from './styled'
 import { Theme } from '../../../components/theme2'
 import { useEffect, useState } from 'react';
 import { NextPage } from 'next';
@@ -17,7 +16,7 @@ const referencias: NextPage = () => {
 
     return (
         <Theme>
-            <C.Container>
+            <>
                 <Head>
                     <title>Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT</title>
                     <meta charSet="utf-8" />
@@ -118,7 +117,7 @@ const referencias: NextPage = () => {
                 <p>
                     Você fará esse processo com a mesma quantidade de referências usadas no seu trabalho ou projeto. Caso tenhamos usado 4 referências para o nosso trabalho, faremos o mesmo processo 4 vezes para ter nossas referências todas formatadas para as normas ABNT.
                 </p>
-            </C.Container>
+            </>
         </Theme>
     )
 };

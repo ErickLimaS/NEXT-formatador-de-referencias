@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
 import { Theme } from '../../components/theme2'
-import * as C from './styles'
 
 
 const credits: NextPage = () => {
@@ -14,7 +13,7 @@ const credits: NextPage = () => {
 
     return (
         <Theme>
-            <C.Container>
+            <>
                 <Head>
                     <title>Créditos | Referência em ABNT</title>
                     <meta charSet="utf-8" />
@@ -51,7 +50,7 @@ const credits: NextPage = () => {
                     <p>Usamos uma imagem como logo e SVGs como ícones de navegação do nosso site, sobe condição de dar créditos para os autores. Os links acima são dos responsaveis que fizeram esse site o que ele é agora, com suas devidas contribuições descritas no topo.</p>
                 </div>
 
-            </C.Container>
+            </>
         </Theme>
     )
 }

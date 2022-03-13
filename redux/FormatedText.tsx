@@ -1,4 +1,3 @@
-import * as C from '../pages/step3/styles'
 import { useSelector } from 'react-redux';
 import Link from 'next/link';
 
@@ -72,7 +71,7 @@ export const FormatedText = () => {
             if (etAlCheckbox !== '') { //checkbox checked
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -84,14 +83,14 @@ export const FormatedText = () => {
 
                         <hr />
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0) { // 0 equal to has more than one author
 
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -101,14 +100,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {subtitle}. Disponível em: {url}. Publicado em: {dayPublic} {monthPublic}. {yearPublic}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1) { //has more than one author
 
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -118,14 +117,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {subtitle}. Disponível em: {url}. Publicado em: {dayPublic} {monthPublic}. {yearPublic}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2) { //has more than one author
 
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -135,14 +134,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {subtitle}. Disponível em: {url}. Publicado em: {dayPublic} {monthPublic}. {yearPublic}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3) { //has more than one author
 
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -152,14 +151,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {subtitle}. Disponível em: {url}. Publicado em: {dayPublic} {monthPublic}. {yearPublic}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4) { //has more than one author
 
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -169,14 +168,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {subtitle}. Disponível em: {url}. Publicado em: {dayPublic} {monthPublic}. {yearPublic}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 5 || auxNewAuthor > 5) { //has more than one author
 
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -186,14 +185,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {subtitle}. Disponível em: {url}. Publicado em: {dayPublic} {monthPublic}. {yearPublic}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }
         else if (radioCheck === '2') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -203,7 +202,7 @@ export const FormatedText = () => {
                         <p className='test'>{companyName}. <b className='bold'>{title}</b>. {local}. {noDate}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -215,7 +214,7 @@ export const FormatedText = () => {
             if (etAlCheckbox !== '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -225,13 +224,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {etAlCheckbox} {title}. <span className='italic'>In</span>: {responsableBlog}. <b className='bold'>{blogTitle}</b>. {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -241,13 +240,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {title}. <span className='italic'>In</span>: {responsableBlog}. <b className='bold'>{blogTitle}</b>. {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -257,13 +256,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {title}. <span className='italic'>In</span>: {responsableBlog}. <b className='bold'>{blogTitle}</b>. {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -273,13 +272,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {title}. <span className='italic'>In</span>: {responsableBlog}. <b className='bold'>{blogTitle}</b>. {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -289,13 +288,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {title}. <span className='italic'>In</span>: {responsableBlog}. <b className='bold'>{blogTitle}</b>. {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -305,13 +304,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {title}. <span className='italic'>In</span>: {responsableBlog}. <b className='bold'>{blogTitle}</b>. {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 5 || auxNewAuthor > 5) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -321,7 +320,7 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. {title}. <span className='italic'>In</span>: {responsableBlog}. <b className='bold'>{blogTitle}</b>. {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }
@@ -334,7 +333,7 @@ export const FormatedText = () => {
             if (etAlCheckbox !== '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -344,13 +343,13 @@ export const FormatedText = () => {
                             <p className='test'>{namePodcastEpisode}. [Locução de]: {podcastAnnouncer}. {etAlCheckbox} {placePublic}: {namePodcast}, {dayPublic} {monthPublic}. {yearPublic}. Podcast. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -360,7 +359,7 @@ export const FormatedText = () => {
                             <p className='test'>{namePodcastEpisode}. [Locução de]: {podcastAnnouncer}. {placePublic}: {namePodcast}, {dayPublic} {monthPublic}. {yearPublic}. Podcast. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }
@@ -372,7 +371,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -382,7 +381,7 @@ export const FormatedText = () => {
                         <p className='test'>{displayNameUser}. <b className='bold'>{socialMediaMensage}</b> [...]. {local}. {dayPublic} {monthPublic}. {yearPublic}. {userSocialMedia}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -393,7 +392,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -403,7 +402,7 @@ export const FormatedText = () => {
                         <p className='test'>{remetenteName}. <b className='bold'>{emailSubject}</b>. Destinatários: {destinatario}. {local}, {dayPublic} {monthPublic}. {yearPublic}. 1 mensagem eletrônica.</p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -414,7 +413,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -424,7 +423,7 @@ export const FormatedText = () => {
                         <p className='test'>{title}. <span className='italic'>In</span>: WIKIPÉDIA: a enciclopédia livre. [São Francisco, CA: Fundação Wikimedia], 2017. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -436,7 +435,7 @@ export const FormatedText = () => {
             if (etAlCheckbox !== '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -446,13 +445,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {editionBook}. ed. {local}: {publishingComp}, {yearPublic}. {paginationBook} p.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -462,13 +461,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {editionBook}. ed. {local}: {publishingComp}, {yearPublic}. {paginationBook} p.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -478,13 +477,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {editionBook}. ed. {local}: {publishingComp}, {yearPublic}. {paginationBook} p.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -494,13 +493,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {editionBook}. ed. {local}: {publishingComp}, {yearPublic}. {paginationBook} p.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -510,13 +509,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {editionBook}. ed. {local}: {publishingComp}, {yearPublic}. {paginationBook} p.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -526,13 +525,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {editionBook}. ed. {local}: {publishingComp}, {yearPublic}. {paginationBook} p.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 5 || auxNewAuthor > 5) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -542,7 +541,7 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {editionBook}. ed. {local}: {publishingComp}, {yearPublic}. {paginationBook} p.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }
@@ -555,7 +554,7 @@ export const FormatedText = () => {
             if (etAlCheckbox !== '' && doiCheckbox === '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -565,13 +564,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (etAlCheckbox !== '' && doiCheckbox === '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -581,14 +580,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
 
             else if (etAlCheckbox !== '' && doiCheckbox !== '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -598,13 +597,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (etAlCheckbox !== '' && doiCheckbox !== '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -614,13 +613,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0 && doiCheckbox === '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -630,13 +629,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0 && doiCheckbox === '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -646,13 +645,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -662,14 +661,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
 
             else if (auxNewAuthor === 1 && doiCheckbox === '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -679,13 +678,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1 && doiCheckbox === '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -695,13 +694,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1 && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -711,13 +710,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -727,14 +726,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
 
             else if (auxNewAuthor === 2 && doiCheckbox === '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -744,13 +743,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2 && doiCheckbox === '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -760,13 +759,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2 && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -776,13 +775,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -792,14 +791,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
 
             else if (auxNewAuthor === 3 && doiCheckbox === '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -809,13 +808,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3 && doiCheckbox === '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -825,13 +824,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3 && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -841,13 +840,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -857,14 +856,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
 
             else if (auxNewAuthor === 4 && doiCheckbox === '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -874,13 +873,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4 && doiCheckbox === '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -890,13 +889,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4 && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -906,13 +905,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -922,14 +921,14 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
 
             else if ((auxNewAuthor === 5 || auxNewAuthor > 5) && doiCheckbox === '0' && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -939,13 +938,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if ((auxNewAuthor === 5 || auxNewAuthor > 5) && doiCheckbox === '0') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -955,13 +954,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if ((auxNewAuthor === 5 || auxNewAuthor > 5) && subtitle === '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -971,13 +970,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 5 || auxNewAuthor > 5) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -987,7 +986,7 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {subtitle}. {local}: {publishingComp}, {yearPublic}. <span className='italic'>E-book</span>. {paginationBook} p. {doiCheckbox}. Disponível em: {url}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }
@@ -999,7 +998,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1009,7 +1008,7 @@ export const FormatedText = () => {
                         <p className='test'>{nameAuthor1}. <b className='bold'>{title}</b>. {local}, {yearPublic}. 1 vídeo ({durationVideo} min). Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}. </p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -1020,7 +1019,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1030,7 +1029,7 @@ export const FormatedText = () => {
                         <p className='test'>{upperSurName1}, {nameAuthor1}. {title}. <b className='bold'>{magazine}</b>, {local}, {dayPublic} {monthPublic}. {yearPublic}.</p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -1041,7 +1040,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1051,7 +1050,7 @@ export const FormatedText = () => {
                         <p className='test'>{upperSurName1}, {nameAuthor1}. {title}. [Entrevista concedida a] {nameAuthor2} {surAuthor2}. <b className='bold'>{magazine}</b>, {local}, n. {numberMagaz}, p. {paginationBook}, {dayPublic} {monthPublic}. {yearPublic}.</p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -1062,7 +1061,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1072,7 +1071,7 @@ export const FormatedText = () => {
                         <p className='test'>{upperSurName1}, {nameAuthor1}. {title}. <b className='bold'>{magazine}</b>, {local}, n. {numberMagaz}, p. {paginationBook}, {dayPublic} {monthPublic}. {yearPublic}.</p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -1083,7 +1082,7 @@ export const FormatedText = () => {
         if (radioCheck === '1') {
             formated = (
 
-                <C.Container>
+                <>
                     <h1>Pronto! Sua Referência está Formatada!</h1>
                     <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1093,7 +1092,7 @@ export const FormatedText = () => {
                         <p className='test'>{upperSurName1}, {nameAuthor1}. {title}. <b className='bold'>{magazine}</b>, {local}, {dayPublic} {monthPublic}. {yearPublic}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}</p>
                     </div>
 
-                </C.Container>
+                </>
             )
         }
     }
@@ -1105,7 +1104,7 @@ export const FormatedText = () => {
             if (auxNewAuthor === 0 && etAlCheckbox !== '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1115,13 +1114,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1131,13 +1130,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1147,13 +1146,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1163,13 +1162,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1179,13 +1178,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1195,13 +1194,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 5 || auxNewAuthor > 5) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1211,7 +1210,7 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }
@@ -1224,7 +1223,7 @@ export const FormatedText = () => {
             if (auxNewAuthor === 0 && etAlCheckbox !== '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1234,13 +1233,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Dissertação. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1250,13 +1249,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Dissertação. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1266,13 +1265,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Dissertação. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1282,13 +1281,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Dissertação. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1299,13 +1298,13 @@ export const FormatedText = () => {
                         </div>
 
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1315,13 +1314,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Dissertação. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 5 || auxNewAuthor > 5) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1331,7 +1330,7 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Dissertação. ({uniDegreed}) - {university}, {local}, {yearPublic}. </p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }
@@ -1344,7 +1343,7 @@ export const FormatedText = () => {
             if (auxNewAuthor === 0 && etAlCheckbox !== '') {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1354,13 +1353,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <span className='italic'>{etAlCheckbox}</span> <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearAcess}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 0) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1370,13 +1369,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearAcess}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 1) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1386,13 +1385,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearAcess}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 2) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1402,13 +1401,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearAcess}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 3) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1418,13 +1417,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearAcess}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 4) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1434,13 +1433,13 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearAcess}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
             else if (auxNewAuthor === 5 || auxNewAuthor > 5) {
                 formated = (
 
-                    <C.Container>
+                    <>
                         <h1>Pronto! Sua Referência está Formatada!</h1>
                         <p>Copie o texto abaixo e cole a Referência no seu trabalho!</p>
 
@@ -1450,7 +1449,7 @@ export const FormatedText = () => {
                             <p className='test'>{upperSurName1}, {nameAuthor1}. {upperSurName2}, {nameAuthor2}. {upperSurName3}, {nameAuthor3}. {upperSurName4}, {nameAuthor4}. {upperSurName5}, {nameAuthor5}. {upperSurName6}, {nameAuthor6}. <b className='bold'>{title}</b>. {yearPublic}. {paginationBook} p. Tese. ({uniDegreed}) - {university}, {local}, {yearAcess}. Disponível em: {url}. Acesso em: {dayAcess} {monthAcess}. {yearAcess}.</p>
                         </div>
 
-                    </C.Container>
+                    </>
                 )
             }
         }

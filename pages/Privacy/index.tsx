@@ -3,7 +3,6 @@ import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
-import * as C from './styles'
 
 
 const privacy: NextPage = () => {
@@ -14,7 +13,7 @@ const privacy: NextPage = () => {
 
     return (
         <Theme>
-            <C.Container>
+            <>
                 <Head>
                     <title>Política de Privacidade | Referência em ABNT</title>
                     <meta charSet="utf-8" />
@@ -205,7 +204,7 @@ const privacy: NextPage = () => {
                     <li>By email: contato.referenciaemabnt@gmail.com</li>
                 </ul>
 
-            </C.Container>
+            </>
         </Theme>
     )
 }

@@ -3,7 +3,6 @@ import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
-import * as C from './styles'
 
     
 const terms: NextPage = () => {
@@ -14,7 +13,7 @@ const terms: NextPage = () => {
 
     return (
         <Theme>
-            <C.Container>
+            <>
             <Head>
                     <title>Termos e Condições | Referência em ABNT</title>
                     <meta charSet="utf-8" />
@@ -123,7 +122,7 @@ const terms: NextPage = () => {
                 <ul>
                     <li>By email: contato.referenciaemabnt@gmail.com</li>
                 </ul>
-            </C.Container>
+            </>
         </Theme>
     )
 }

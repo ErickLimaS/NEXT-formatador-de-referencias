@@ -3,8 +3,6 @@ import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
-import * as C from './styles'
-
 
 const about: NextPage = () => {
 
@@ -14,7 +12,7 @@ const about: NextPage = () => {
 
     return (
         <Theme>
-            <C.Container>
+            <>
                 <Head>
                     <title>Sobre | Referência em ABNT</title>
                     <meta charSet="utf-8" />
@@ -61,7 +59,7 @@ const about: NextPage = () => {
                 <p>
                     Não podemos deixar de citar que somos da área de T.I., e estamos, além de tudo, testando nossos conhecimentos sobre front-end com a criação desse site.
                 </p>
-            </C.Container>
+            </>
         </Theme>
     )
 }
