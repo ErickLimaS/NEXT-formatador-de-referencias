@@ -264,7 +264,7 @@ export const Header = () => {
             >
                 <span className='spanMobileMenu' id='drawer-titulo'>Como Fazer...</span>
                 <ul id='drawer-body'>
-                    <li><a href='./aboutAbnt/referencias' target="_blank">... as Referências Bibliográficas</a></li>
+                    <li><a href='./abnt/referencias' target="_blank">... as Referências Bibliográficas</a></li>
 
                 </ul>
             </Drawer>
@@ -277,7 +277,7 @@ export const Header = () => {
 
             <Menu className='menuDesktop' control={<Button>Como Fazer em ABNT ...</Button>} placement="center" gutter={8} withArrow size="lg">
                 <Menu.Label>Como Fazer...</Menu.Label>
-                <Menu.Item component='a' href='./aboutAbnt/referencias' target="_blank">... as Referências Bibliográficas</Menu.Item>
+                <Menu.Item component='a' href='./abnt/referencias' target="_blank">... as Referências Bibliográficas</Menu.Item>
 
             </Menu>
 

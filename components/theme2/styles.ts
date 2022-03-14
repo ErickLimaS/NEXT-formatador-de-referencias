@@ -191,7 +191,7 @@ export const Page = styled.div`
         margin: 40px 0;
     }
     img{
-        border: 1px solid #0000004a;
+        border: 1px solid #0000004a!important;
     }
     .underline {
         text-decoration: underline;

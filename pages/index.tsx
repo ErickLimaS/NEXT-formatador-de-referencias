@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
     const handleNextStep = () => {
         if (refType2 === '') {
-            swal("Tipo não Selecionado!", "Você precisa dizer de onde a referência vem!", "warning");
+            //swal("Tipo não Selecionado!", "Você precisa dizer de onde a referência vem!", "warning");
         }
         else if (refType1 !== '' || refType2 !== '') {
             //<Link href='./Step2' />

@@ -6,13 +6,10 @@ import Script from 'next/script';
 import Head from 'next/head';
 
 const referencias: NextPage = () => {
-    const [title, setTitle] = useState("Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT");
 
     useEffect(() => {
-        document.title = title;
         window.scrollTo(0, 0);
-        setTitle('Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT')
-    }, [title])
+    }, [])
 
     return (
         <Theme>
