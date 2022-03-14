@@ -12,7 +12,7 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import Script from 'next/script'
 
-const step2: NextPage = () => {
+const Step2: NextPage = () => {
     const dispatch = useDispatch();
     const { refType1, refType2, yearPublic, nameAuthor2, surAuthor1 } = useSelector((state: any) => state.allData);
 
@@ -234,7 +234,7 @@ const step2: NextPage = () => {
                     <Link href="/" >
                         <span className='backButton'>Voltar</span>
                     </Link>
-                    <Link href='./step3'>
+                    <Link href='./Step3'>
                         <Button color="teal" size="lg" onClick={handleNextStep}>Formatar Referência</Button>
                     </Link>
                 </div>
@@ -243,4 +243,4 @@ const step2: NextPage = () => {
         </Theme>
     );
 }
-export default step2
+export default Step2

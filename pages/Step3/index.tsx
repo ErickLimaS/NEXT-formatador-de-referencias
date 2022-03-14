@@ -65,7 +65,7 @@ import {
 import Head from 'next/head';
 import Script from 'next/script';
 
-const step3: NextPage = () => {
+const Step3: NextPage = () => {
     const dispatch = useDispatch();
     const { refType1, refType2 } = useSelector((state: any) => state.allData)
     const [title, setTitle] = useState("Concluído! | Referência em ABNT");
@@ -515,4 +515,4 @@ const step3: NextPage = () => {
 
     );
 }
-export default step3
+export default Step3

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
 
 
-const privacy: NextPage = () => {
+const Privacy: NextPage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -208,4 +208,4 @@ const privacy: NextPage = () => {
         </Theme>
     )
 }
-export default privacy
+export default Privacy

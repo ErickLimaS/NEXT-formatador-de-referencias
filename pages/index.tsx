@@ -162,7 +162,7 @@ const Home: NextPage = () => {
                 <SelectOptions />
 
                 <div className='buttons'>
-                    <Link href='./step2'>
+                    <Link href='./Step2'>
                         <button onClick={handleNextStep}>Próximo</button>
                     </Link>
                 </div>

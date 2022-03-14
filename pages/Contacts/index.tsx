@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
 
 
-const contacts: NextPage = () => {
+const Contacts: NextPage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -55,4 +55,4 @@ const contacts: NextPage = () => {
         </Theme>
     )
 }
-export default contacts
+export default Contacts
