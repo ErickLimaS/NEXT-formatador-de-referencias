@@ -193,6 +193,7 @@ const Step2: NextPage = () => {
     return (
         <Theme>
             <Head>
+                <html lang="pt-br" />
                 <title>Passo 2 | Referência em ABNT</title>
                 <meta charSet="utf-8" />
                 <meta name="title" content="Referência em ABNT 2022 - Faça Agora a Sua!" />
@@ -201,7 +202,6 @@ const Step2: NextPage = () => {
                 <meta name="keywords"
                     content="normas abnt, referencia, gerador referencia, gerador abnt, margem abnt, como fazer referencia em abnt, formatar trabalho em abnt, referencias prontas para trabalho escolar, projeto em abnt, TCC em abnt, referencias bibliograficas, referencias bibliograficas em abnt, como fazer referencias"
                 />
-                <link rel="canonical" href="https://referenciaemabnt.com" />
                 <meta name="copyright" content="(c) 2022" />
                 <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

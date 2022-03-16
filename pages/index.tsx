@@ -108,6 +108,7 @@ const Home: NextPage = () => {
         <Theme>
             <Container>
                 <Head>
+                    <html lang="pt-br" />
                     <title>Gerador de Referência em ABNT | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Referência em ABNT 2022 - Faça Agora a Sua!" />
@@ -135,7 +136,7 @@ const Home: NextPage = () => {
                     </Script>
                 </Head>
 
-                <h1>Primeiro, Escolha de Onde Vem a Sua Referência</h1>
+                <h2>Primeiro, Escolha de Onde Vem a Sua Referência</h2>
                 <p>Escolha uma das opções da lista abaixo</p>
 
                 <hr />

@@ -15,6 +15,7 @@ const credits: NextPage = () => {
         <Theme>
             <>
                 <Head>
+                    <html lang="pt-br" />
                     <title>Créditos | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Créditos" />
@@ -24,7 +25,6 @@ const credits: NextPage = () => {
                     <meta name="description"
                         content="Formate suas referências bibliográficas usando nosso gerador com as normas ABNT mais atualizadas. Apenas copie e cole no seu trabalho a referência pronta!"
                     />
-                    <link rel="canonical" href="https://referenciaemabnt.com" />
                     <meta name="copyright" content="(c) 2022" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="theme-color" content="#000000" />

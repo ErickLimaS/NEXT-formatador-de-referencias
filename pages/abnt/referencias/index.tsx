@@ -15,6 +15,7 @@ const referencias: NextPage = () => {
         <Theme>
             <>
                 <Head>
+                    <html lang="pt-br" />
                     <title>Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT" />
@@ -24,7 +25,6 @@ const referencias: NextPage = () => {
                     <meta name="keywords"
                         content="normas abnt, referencia, gerador referencia, gerador abnt, margem abnt, como fazer referencia em abnt, formatar trabalho em abnt, referencia automatica, referencias prontas para trabalho escolar, projeto em abnt, TCC em abnt, referencias bibliograficas, referencias bibliograficas em abnt, como fazer referencias"
                     />
-                    <link rel="canonical" href="https://referenciaemabnt.com" />
                     <meta name="copyright" content="(c) 2022" />
                     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -63,7 +63,7 @@ const referencias: NextPage = () => {
                     Ao acessar o <a href='https://www.referenciaemabnt.com'>site</a>, você irá se deparar com a imagem abaixo:
                 </p>
                 <div className='imgCenter'>
-                    <Image src='/../public/img/referenciasPage/1-1.JPG' alt="Passo 1. Tela inicial para formatar a referência." width={600} height={300} /></div>
+                    <Image src='/../public/img/referenciasPage/1-1.JPG' alt="Como formatar a referência online, passo 1." width={600} height={300} /></div>
                 <p>
                     No primeiro campo, preencha com a informação que mais se encaixa com a referência que você usou. No nosso caso, usaremos uma referência da <span className='underline'>Wikipédia</span>, que fala sobre o <span className='underline'>Planeta Terra</span>. Então selecionaremos a opção "Internet" no primeiro campo. Depois de selecionada, aparecerá outra caixa de seleção, agora para especificar de onde da <span className='underline'>Internet</span> que tiramos a referência.
                 </p>
@@ -71,7 +71,7 @@ const referencias: NextPage = () => {
                     Após preenchidas, a sua tela deverá estar assim:
                 </p>
                 <div className='imgCenter'>
-                    <Image src='/../public/img/referenciasPage/2-1.JPG' alt="A tela agora deve estar com todas as informações necessárias." width={600} height={300} />
+                    <Image src='/../public/img/referenciasPage/2-1.JPG' alt="Como formatar a referência online, passo 1 preenchido." width={600} height={300} />
                 </div>
                 <p>
                     Sendo assim, aperte em "Próximo" e iremos para o próximo passo.
@@ -81,7 +81,7 @@ const referencias: NextPage = () => {
                     Seguindo para o próximo passo, iremos ver a seguinte tela:
                 </p>
                 <div className='imgCenter'>
-                    <Image src='/../public/img/referenciasPage/3-1.JPG' alt="Agora precisamos preencher todos as informações pedidas sobre a referência." width={600} height={300} />
+                    <Image src='/../public/img/referenciasPage/3-1.JPG' alt="Como formatar a referência online, passo 2, preencha as informações." width={600} height={300} />
                 </div>
                 <p>
                     Os campos a ser preenchidos tem um título bem sugestivo e direto. Então, apenas você irá apenas preencher o que é pedido em cada campo.
@@ -106,7 +106,7 @@ const referencias: NextPage = () => {
                     Está pronta! A referência está agora formatada para os padrões exigidos pela ABNT.
                 </p>
                 <div className='imgCenter'>
-                    <Image src='/../public/img/referenciasPage/4-1.JPG' alt="A referência foi formatada para as normas ABNT. Agora é copiar ela e colar no trabalho." width={600} height={300} />
+                    <Image src='/../public/img/referenciasPage/4-1.JPG' alt="Como formatar a referência online concluido. Agora copie e cole no seu trabalho." width={600} height={300} />
                 </div>
                 <p>
                     Agora iremos apenas copiar essa referência já formatada e colar ela na seção de "<span className='underline'>Referências Bibliográficas</span>" do nosso trabalho.

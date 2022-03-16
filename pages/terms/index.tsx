@@ -4,7 +4,7 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { Theme } from "../../components/theme2"
 
-    
+
 const terms: NextPage = () => {
 
     useEffect(() => {
@@ -14,7 +14,8 @@ const terms: NextPage = () => {
     return (
         <Theme>
             <>
-            <Head>
+                <Head>
+                    <html lang="pt-br" />
                     <title>Termos e Condições | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Termos e Condições" />
@@ -23,7 +24,6 @@ const terms: NextPage = () => {
                     <meta name="keywords"
                         content="normas abnt, referencia, gerador referencia, gerador abnt, margem abnt, como fazer referencia em abnt, formatar trabalho em abnt, referencias prontas para trabalho escolar, projeto em abnt, TCC em abnt, referencias bibliograficas, referencias bibliograficas em abnt, como fazer referencias"
                     />
-                    <link rel="canonical" href="https://referenciaemabnt.com" />
                     <meta name="copyright" content="(c) 2022" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="theme-color" content="#000000" />

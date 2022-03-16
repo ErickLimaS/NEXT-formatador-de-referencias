@@ -7,6 +7,12 @@ export const Container = styled.div<{ bgColor: string }>`
     color: #FFF;
     min-height: 100vh;
 
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+    }
+
     .divMainText {
         display: flex;
         flex-direction: column;
@@ -78,7 +84,7 @@ export const Container = styled.div<{ bgColor: string }>`
         }
 
         p {
-            font-weight: 500;
+            font-weight: 400;
             margin-left: 10px;
             margin-right: 10px;
             font-size: 20px;
