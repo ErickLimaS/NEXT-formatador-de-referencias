@@ -193,7 +193,6 @@ const Step2: NextPage = () => {
     return (
         <Theme>
             <Head>
-                <html lang="pt-br" />
                 <title>Passo 2 | Referência em ABNT</title>
                 <meta charSet="utf-8" />
                 <meta name="title" content="Referência em ABNT 2022 - Faça Agora a Sua!" />

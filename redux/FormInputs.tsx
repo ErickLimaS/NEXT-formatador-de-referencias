@@ -221,11 +221,11 @@ export const RefInputs = () => {
                     <div>
                         <label htmlFor="autor">
                             Autor(a) / Editor(a)
-                            <input type="radio" name="autor" id="autor" onBlur={handleAuthorRadioGroup1} value='1' />
+                            <input type="radio" name="autor" id="autor" onFocus={handleAuthorRadioGroup1} value='1' />
                         </label>
                         <label htmlFor="organizacao">
                             Organização
-                            <input type="radio" name="autor" id="organizacao" onBlur={handleAuthorRadioGroup2} value='2' />
+                            <input type="radio" name="autor" id="organizacao" onFocus={handleAuthorRadioGroup2} value='2' />
                         </label>
                     </div>
                 </div>

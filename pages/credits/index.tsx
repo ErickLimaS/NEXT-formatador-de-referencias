@@ -15,7 +15,6 @@ const credits: NextPage = () => {
         <Theme>
             <>
                 <Head>
-                    <html lang="pt-br" />
                     <title>Créditos | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Créditos" />

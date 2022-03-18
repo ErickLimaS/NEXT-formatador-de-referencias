@@ -15,7 +15,6 @@ const referencias: NextPage = () => {
         <Theme>
             <>
                 <Head>
-                    <html lang="pt-br" />
                     <title>Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Como Fazer as Referências Bibliográficas em ABNT | Referência em ABNT" />

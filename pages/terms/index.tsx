@@ -15,7 +15,6 @@ const terms: NextPage = () => {
         <Theme>
             <>
                 <Head>
-                    <html lang="pt-br" />
                     <title>Termos e Condições | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Termos e Condições" />

@@ -15,7 +15,6 @@ const Privacy: NextPage = () => {
         <Theme>
             <>
                 <Head>
-                    <html lang="pt-br" />
                     <title>Política de Privacidade | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Política de Privacidade" />
