@@ -202,10 +202,10 @@ const Step2: NextPage = () => {
                     content="normas abnt, referencia, gerador referencia, gerador abnt, margem abnt, como fazer referencia em abnt, formatar trabalho em abnt, referencias prontas para trabalho escolar, projeto em abnt, TCC em abnt, referencias bibliograficas, referencias bibliograficas em abnt, como fazer referencias"
                 />
                 <meta name="copyright" content="(c) 2022" />
-                <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                <link rel="icon" href="https://www.referenciaemabnt.com/favicon.ico" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#000000" />
-                <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                <link rel="icon" href="https://www.referenciaemabnt.com/favicon.ico" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#000000" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

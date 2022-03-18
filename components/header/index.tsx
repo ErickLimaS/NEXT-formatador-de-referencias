@@ -271,7 +271,7 @@ export const Header = () => {
 
             <Group position="center">
                 <Button className='buttonMobile' onClick={() => setOpened(true)}>
-                    <MenuSvg fill='#FFF' width={25} height={25} alt="Menu do Referencia em Abnt."/>
+                    <MenuSvg fill='#FFF' width={25} height={25} />
                 </Button>
             </Group>
 

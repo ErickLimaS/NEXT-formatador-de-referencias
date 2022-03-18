@@ -27,7 +27,7 @@ const credits: NextPage = () => {
                     <meta name="copyright" content="(c) 2022" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="theme-color" content="#000000" />
-                    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                    <link rel="icon" href="https://www.referenciaemabnt.com/favicon.ico" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="theme-color" content="#000000" />
                     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

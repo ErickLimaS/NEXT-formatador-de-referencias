@@ -25,13 +25,13 @@ export const SideBarItem = ({ title, description, icon, active }: Props) => {
                 </C.Info>
                 <C.IconArea active={active}>
                     {icon === 'one' &&
-                        <NumberOne  fill='#56B48C' width='50' height='50' alt="Passo 1. Escolha a referencia"/>
+                        <NumberOne  fill='#56B48C' width='50' height='50'/>
                     }
                     {icon === 'two' &&
-                        <NumberTwo fill='#56B48C' width='50' height='50' alt="Passo 2. Informacoes"/>
+                        <NumberTwo fill='#56B48C' width='50' height='50'/>
                     }
                     {icon === 'three' &&
-                        <NumberThree fill='#56B48C' width='50' height='50' alt="Passo 3. Concluido "/>
+                        <NumberThree fill='#56B48C' width='50' height='50'/>
                     }
                 </C.IconArea>
             </nav>

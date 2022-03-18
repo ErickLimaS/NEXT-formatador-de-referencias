@@ -111,17 +111,17 @@ const Home: NextPage = () => {
                     <title>Gerador de Referência em ABNT | Referência em ABNT</title>
                     <meta charSet="utf-8" />
                     <meta name="title" content="Referência em ABNT 2022 - Faça Agora a Sua!" />
-                    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                    <link rel="icon" href="https://www.referenciaemabnt.com/favicon.ico" />
                     <meta name="description"
                         content="Formate suas referências bibliográficas usando nosso gerador com as normas ABNT mais atualizadas. Apenas copie e cole no seu trabalho a referência pronta!" />
                     <meta name="keywords"
                         content="normas abnt, referencia, gerador referencia, gerador abnt, margem abnt, como fazer referencia em abnt, formatar trabalho em abnt, referencias prontas para trabalho escolar, projeto em abnt, TCC em abnt, referencias bibliograficas, referencias bibliograficas em abnt, como fazer referencias"
                     />
-                    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-                    <link rel="manifest" href="%PUBLIC_URL%/site.manifest.json" />
+                    <link rel="icon" href="https://www.referenciaemabnt.com/favicon.ico" />
+                    <link rel="manifest" href="https://www.referenciaemabnt.com/site.manifest.json" />
                     <link rel="canonical" href="https://www.referenciaemabnt.com" />
                     <meta name="copyright" content="(c) 2022" />
-                    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                    <link rel="icon" href="https://www.referenciaemabnt.com/favicon.ico" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="theme-color" content="#000000" />
                     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
