@@ -120,7 +120,7 @@ const Home: NextPage = () => {
                     />
                     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
                     <link rel="manifest" href="%PUBLIC_URL%/site.manifest.json" />
-                    <link rel="canonical" href="https://referenciaemabnt.com" />
+                    <link rel="canonical" href="https://www.referenciaemabnt.com" />
                     <meta name="copyright" content="(c) 2022" />
                     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />

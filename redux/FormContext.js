@@ -49,13 +49,13 @@ export const dataSlice = createSlice({
         url: '',
         local: '[S.I.]',
 
-        dayAcess: 0,
+        dayAcess: 10,
         monthAcess: '',
-        yearAcess: 0,
+        yearAcess: 2022,
 
-        dayPublic: 0,
+        dayPublic: 5,
         monthPublic: '',
-        yearPublic: 0,
+        yearPublic: 1988,
         noDate: 's.d.',
 
         placePublic: '[S.I.]',

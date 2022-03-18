@@ -1176,11 +1176,11 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local da Publicação do Livro" description="Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Local da Publicação do Livro" description="Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que NÃO se sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
-                <TextInput label="Editora do Livro" description="Escreva o nome da editora que publicou o livro. Ex: Bloomsbury Publishing." type='text' placeholder={publishingComp} onBlur={handlePublishingComp} required />
+                <TextInput label="Editora do Livro" description="Escreva o nome da editora que publicou o livro. Ex: Bloomsbury Publishing. ([s.n.] significa que NÃO se sabe a editora!)" type='text' placeholder={publishingComp} onBlur={handlePublishingComp} required />
 
                 <hr />
 
@@ -1302,11 +1302,11 @@ export const RefInputs = () => {
 
                 <hr />
 
-                <TextInput label="Local da Publicação do Livro" description="Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que não sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
+                <TextInput label="Local da Publicação do Livro" description="Ex: São Paulo. Se não souber, não precisa preencher nada. ([S.I.] significa que NÃO sabe o local!)" type='text' placeholder={local} rightSection={LocalInfoCircle} onBlur={handleLocal} />
 
                 <hr />
 
-                <TextInput label="Editora do Livro" description="Escreva o nome da editora que publicou o livro. Ex: Bloomsbury Publishing." type='text' placeholder={publishingComp} onBlur={handlePublishingComp} required />
+                <TextInput label="Editora do Livro" description="Escreva o nome da editora que publicou o livro. Ex: Bloomsbury Publishing. ([s.n.] significa que NÃO se sabe a editora!)" type='text' placeholder={publishingComp} onBlur={handlePublishingComp} required />
 
                 <hr />
 
