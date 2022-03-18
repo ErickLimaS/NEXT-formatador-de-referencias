@@ -8,6 +8,9 @@ const nextConfig = {
 module.exports = nextConfig
 */
 module.exports = {
+  images: {
+    domains: ['www.referenciaemabnt.com'],
+  },
   i18n: {
     locales: ["pt-br"],
     defaultLocale: "pt-br",
