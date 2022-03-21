@@ -10,3 +10,4 @@ Site criado para treinar o uso do Next e Typescript.
   - [Sweet Alert](https://sweetalert.js.org/).
   - [Styled Components](https://styled-components.com/).
   - [TypeScript](https://www.typescriptlang.org/).
+  - [Redux](https://redux.js.org/).
